@@ -242,10 +242,10 @@
     margin-top: -2%;
 }
 .card-color-1 {
-    background-color:rgb(247, 247, 159);
+    background-color:pink;
 }
 .card-color-2 {
-    background-color:rgb(247, 247, 159);
+    background-color:lightblue;
 }
 .card-body{
     display: flex;
