@@ -1,0 +1,121 @@
+
+13:54:05 [Information] ( User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+)
+13:54:08 [Information] ( Request starting HTTP/1.1 GET http://localhost:64004/api/values  
+)
+13:54:08 [Information] ( Request starting HTTP/1.1 DEBUG http://localhost:64004/  0
+)
+13:54:08 [Information] ( Request finished in 107.2352ms 200 
+)
+13:54:09 [Information] ( Request finished in 761.0758ms 404 
+)
+13:58:32 [Information] ( Request starting HTTP/1.1 POST http://localhost:64004/api/Apartment/register application/json 638
+)
+13:58:32 [Information] ( Route matched with "{action = \"Register\", controller = \"Apartment\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(Roomates.Models.RegisterModelForApartment)" on controller "Roomates.Application.Controllers.ApartmentController" ("Roomates.Application").
+)
+13:58:33 [Information] ( Executing action method "Roomates.Application.Controllers.ApartmentController.Register (Roomates.Application)" - Validation state: Valid
+)
+13:58:33 [Information] ( Entity Framework Core "2.1.14-servicing-32113" initialized '"ApartmentsDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+)
+13:58:34 [Information] ( Executed DbCommand ("10"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 50), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (Size = 100), @p8='?' (Size = 100), @p9='?' (Size = 100) (DbType = Int32), @p10='?' (Size = 100) (DbType = Int32), @p11='?' (DbType = Boolean), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Apartment] ([Id], [Area], [BathEquipped], [BedroomsEquipped], [InternetAccess], [KitchenEqupped], [LivingRoomEqupped], [Name], [Password], [Price], [Rooms], [Smoking], [TvAccess], [TvOperator], [TwoSepratedBedRooms], [TypeOfHEating])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);"
+)
+13:58:34 [Information] ( USER who is renting the apartment: "ApartmentTest" has registered
+)
+13:58:34 [Information] ( Executed action method "Roomates.Application.Controllers.ApartmentController.Register (Roomates.Application)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 978.1545ms.
+)
+13:58:34 [Information] ( Executing ObjectResult, writing value of type '"System.String"'.
+)
+13:58:34 [Information] ( Executed action "Roomates.Application.Controllers.ApartmentController.Register (Roomates.Application)" in 1572.7242ms
+)
+13:58:34 [Information] ( Request finished in 1711.9909ms 200 text/plain; charset=utf-8
+)
+13:59:25 [Information] ( User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+)
+13:59:26 [Information] ( Request starting HTTP/1.1 DEBUG http://localhost:64004/  0
+)
+13:59:26 [Information] ( Request starting HTTP/1.1 GET http://localhost:64004/api/values  
+)
+13:59:26 [Information] ( Request finished in 57.6824ms 200 
+)
+13:59:27 [Information] ( Request finished in 722.9237ms 404 
+)
+13:59:29 [Information] ( Request starting HTTP/1.1 POST http://localhost:64004/api/Apartment/authenticate application/json 67
+)
+13:59:29 [Information] ( Route matched with "{action = \"Authenticate\", controller = \"Apartment\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[Roomates.Models.ApartmentProfileModel] Authenticate(Roomates.Models.ApartmentLogInModel)" on controller "Roomates.Application.Controllers.ApartmentController" ("Roomates.Application").
+)
+13:59:30 [Information] ( Executing action method "Roomates.Application.Controllers.ApartmentController.Authenticate (Roomates.Application)" - Validation state: Valid
+)
+13:59:30 [Information] ( Entity Framework Core "2.1.14-servicing-32113" initialized '"ApartmentsDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+)
+13:59:31 [Information] ( Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Area], [a].[BathEquipped], [a].[BedroomsEquipped], [a].[InternetAccess], [a].[KitchenEqupped], [a].[LivingRoomEqupped], [a].[Name], [a].[Password], [a].[Price], [a].[Rooms], [a].[Smoking], [a].[TvAccess], [a].[TvOperator], [a].[TwoSepratedBedRooms], [a].[TypeOfHEating]
+FROM [Apartment] AS [a]"
+)
+13:59:31 [Information] ( USER who is renting an apartment: ApartmentTest has logged in
+)
+13:59:31 [Information] ( Executed action method "Roomates.Application.Controllers.ApartmentController.Authenticate (Roomates.Application)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1091.5354ms.
+)
+13:59:31 [Information] ( Executing ObjectResult, writing value of type '"Roomates.Models.ApartmentProfileModel"'.
+)
+13:59:31 [Information] ( Executed action "Roomates.Application.Controllers.ApartmentController.Authenticate (Roomates.Application)" in 1758.6899ms
+)
+13:59:31 [Information] ( Request finished in 1864.7213ms 200 application/json; charset=utf-8
+)
+14:20:44 [Information] ( User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+)
+14:20:45 [Information] ( Request starting HTTP/1.1 DEBUG http://localhost:64004/  0
+)
+14:20:45 [Information] ( Request starting HTTP/1.1 GET http://localhost:64004/api/values  
+)
+14:20:45 [Information] ( Request finished in 87.3838ms 200 
+)
+14:20:46 [Information] ( Request finished in 547.6616ms 404 
+)
+14:22:17 [Information] ( Request starting HTTP/1.1 POST http://localhost:64004/api/User/register application/json 399
+)
+14:22:17 [Information] ( Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(Roomates.Models.RegisterModelForRoomate)" on controller "Roomates.Application.Controllers.UserController" ("Roomates.Application").
+)
+14:22:17 [Information] ( Executing action method "Roomates.Application.Controllers.UserController.Register (Roomates.Application)" - Validation state: Valid
+)
+14:22:18 [Information] ( Entity Framework Core "2.1.14-servicing-32113" initialized '"RoomatesDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+)
+14:22:18 [Information] ( Executed DbCommand ("30"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 100), @p2='?' (Size = 10) (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (Size = 50), @p5='?' (Size = 50), @p6='?' (DbType = Boolean), @p7='?' (Size = 100), @p8='?' (Size = 10) (DbType = Int64), @p9='?' (DbType = Boolean)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([Id], [Address], [Age], [DoYouHaveSpace], [Email], [FullName], [Messages], [Password], [PhoneNumber], [QuestionForRoomate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);"
+)
+14:22:18 [Information] ( USER: "ViktorijaJovanovska" has registered
+)
+14:22:18 [Information] ( Executed action method "Roomates.Application.Controllers.UserController.Register (Roomates.Application)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 978.1021ms.
+)
+14:22:18 [Information] ( Executing ObjectResult, writing value of type '"System.String"'.
+)
+14:22:18 [Information] ( Executed action "Roomates.Application.Controllers.UserController.Register (Roomates.Application)" in 1537.5153ms
+)
+14:22:18 [Information] ( Request finished in 1661.5828ms 200 text/plain; charset=utf-8
+)
+14:22:26 [Information] ( Request starting HTTP/1.1 POST http://localhost:64004/api/User/authenticate application/json 71
+)
+14:22:26 [Information] ( Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[Roomates.Models.RoomateProfileModel] Authenticate(Roomates.Models.LogInModel)" on controller "Roomates.Application.Controllers.UserController" ("Roomates.Application").
+)
+14:22:26 [Information] ( Executing action method "Roomates.Application.Controllers.UserController.Authenticate (Roomates.Application)" - Validation state: Valid
+)
+14:22:26 [Information] ( Entity Framework Core "2.1.14-servicing-32113" initialized '"RoomatesDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+)
+14:22:27 [Information] ( Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Address], [u].[Age], [u].[DoYouHaveSpace], [u].[Email], [u].[FullName], [u].[Messages], [u].[Password], [u].[PhoneNumber], [u].[QuestionForRoomate]
+FROM [User] AS [u]"
+)
+14:22:27 [Information] ( USER: ViktorijaJovanovska has logged in
+)
+14:22:27 [Information] ( Executed action method "Roomates.Application.Controllers.UserController.Authenticate (Roomates.Application)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 255.2371ms.
+)
+14:22:27 [Information] ( Executing ObjectResult, writing value of type '"Roomates.Models.RoomateProfileModel"'.
+)
+14:22:27 [Information] ( Executed action "Roomates.Application.Controllers.UserController.Authenticate (Roomates.Application)" in 278.731ms
+)
+14:22:27 [Information] ( Request finished in 283.0144ms 200 application/json; charset=utf-8
+)
